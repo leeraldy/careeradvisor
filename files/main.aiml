@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern>HELLO</pattern>
+    <template>
+        Hello, my name is Shawn. I'm an assistant for the C.S. career advisors.<srai>MAINOPTION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>HELLO ^</pattern>
+    <template><srai>HELLO</srai></template>
+</category>
+
+<category>
+    <pattern>Hi ^</pattern>
+    <template><srai>HELLO</srai></template>
+</category>
+
+<category>
+    <pattern>MAINOPTION</pattern>
+    <template>
+        <break></break>Please choose an option below.
+        <button>
+            <text>Take CS Career Assessment</text>
+            <postback>TAKE ASSESSMENT</postback>
+        </button>
+        <button>
+            <text>View popular CS Careers</text>
+            <postback>VIEW CAREERS</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>VIEW CAREERS</pattern>
+    <template>
+        The following are 5 popular CS careers.
+        <button>
+            <text>Software Developer</text>
+            <postback>SOFTWAREDEVELOPER</postback>
+        </button>
+        <button>
+            <text>Database Administrator</text>
+            <postback>DATABASEADMINISTRATOR</postback>
+        </button>
+        <button>
+            <text>Computer Hardware Engineer</text>
+            <postback>COMPUTERENGINEER</postback>
+        </button>
+        <button>
+            <text>Web Developer</text>
+            <postback>WEBDEVELOPER</postback>
+        </button>
+        <button>
+            <text>Web Designer</text>
+            <postback>WEBDESIGNER</postback>
+        </button>
+        <button>
+            <text>Information Security Analyst</text>
+            <postback>SECURITYANALYST</postback>
+        </button>
+    </template>
+</category>
+
+<!-- pratice code-->
+<category>
+    <pattern>MY NAME IS * *</pattern>
+    <template>
+        Hello <formal><star/></formal> <formal><star index="2"></star></formal><srai>MAINOPTION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>MY NAME IS *</pattern>
+    <template>
+        Hello <formal><star/></formal><srai>MAINOPTION</srai>
+    </template>
+</category>
+<!-- pratice code-->
+
+<!-- fun experiement -->
+<category>
+    <pattern>WHAT DO YOU LOOK LIKE</pattern>
+    <template>
+        <image>https://www.voicebot.net/ImagesCommon/Icons/256x256/VoiceBot.png</image>
+    </template>
+</category>
+<!-- fun experiement -->
+
+</aiml>

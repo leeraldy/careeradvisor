@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<category>
+	    <pattern>TAKE ASSESSMENT</pattern>
+	    <template>
+	        This Assessment will help identify your strengths and weaknesses 
+	        in order to determine a popular C.S. career that would best fit your interests.
+	        <reply>
+	            <text>Start Career Assessment</text>
+	            <postback>START ASSESSMENT</postback>
+	        </reply>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>START ASSESSMENT</pattern>
+        <template>
+            Which do you enjoy more?
+            <reply>
+                <text>Coding</text>
+                <postback>CODING</postback>
+            </reply>
+            <reply>
+                <text>Computer Networking</text>
+                <postback>COMPUTER NETWORKING</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CODING</pattern>
+        <template>
+            Do you enjoy coding and want to have a hand in the entire design 
+            and development process? 
+            <reply>
+                <text>Yes</text>
+                <postback>SOFTWAREDEVELOPER</postback>
+            </reply>
+            <reply>
+                <text>No</text>
+                <postback>NOSOFTWAREDEVELOPER</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOSOFTWAREDEVELOPER</pattern>
+        <template>
+            Do you enjoy web technologies, but also want to be involved in the back end?
+            <reply>
+                <text>Yes</text>
+                <postback>WEBDEVELOPER</postback>
+            </reply>
+            <reply>
+                <text>No</text>
+                <postback>NOMATCH</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>COMPUTER NETWORKING</pattern>
+        <template>
+            Do you have an interest in how information is stored, secured, 
+            accessed and optimized for a business needs? 
+            <reply>
+                <text>Yes</text>
+                <postback>DATABASEADMINISTRATOR</postback>
+            </reply>
+            <reply>
+                <text>No</text>
+                <postback>NODATABASEADMINISTRATOR</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NODATABASEADMINISTRATOR</pattern>
+        <template>
+            Do you have an interest in maintaining the network security of an 
+            organization and testing their system for flaws and exploits?
+            <reply>
+                <text>Yes</text>
+                <postback>SECURITYANALYST</postback>
+            </reply>
+            <reply>
+                <text>No</text>
+                <postback>NOSECURITYANALYST</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOSECURITYANALYST</pattern>
+        <template>
+            Do you enjoy solving complex problems, but are more interested in 
+            the tangible hardware that makes software work?
+            <reply>
+                <text>Yes</text>
+                <postback>COMPUTERENGINEER</postback>
+            </reply>
+            <reply>
+                <text>No</text>
+                <postback>NOCOMPUTERENGINEER</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOCOMPUTERENGINEER</pattern>
+        <template>
+            Do you love technology, but also creating things that are visually 
+            attractive and satisfying?
+            <reply>
+                <text>Yes</text>
+                <postback>WEBDESIGNER</postback>
+            </reply>
+            <reply>
+                <text>No</text>
+                <postback>NOMATCH</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOMATCH</pattern>
+        <template>
+            None of the popular careers match your assessment results. However, 
+            there are more careers for C.S. majors. I recommend looking 
+            <link>
+                <text>here</text>
+                <url>https://www.computerscience.org/careers/</url>
+            </link>
+        </template>
+    </category>
+</aiml>

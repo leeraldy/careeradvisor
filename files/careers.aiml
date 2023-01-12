@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>SOFTWAREDEVELOPER</pattern>
+	    <template>
+	        Software developers are the creative minds behind computer programs. 
+	        Some develop the applications that allow people to do specific tasks 
+	        on a computer or another device. Others develop the underlying systems 
+	        that run the devices or that control networks.
+	        <link>
+	            <text>More Info on Software Developers</text>
+	            <url>https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm</url>
+            </link>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>DATABASEADMINISTRATOR</pattern>
+        <template>
+            Database administrators use specialized software to store and organize 
+            data, such as financial information and customer shipping records. 
+            They make sure that data are available to users and secure from 
+            unauthorized access.
+            <link>
+                <text>More Info on Database Administrators</text>
+                <url>https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm#tab-2</url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>COMPUTERENGINEER</pattern>
+        <template>
+            Computer hardware engineers research, design, develop, and test computer 
+            systems and components such as processors, circuit boards, memory devices, 
+            networks, and routers.
+            <link>
+                <text>More Info on Computer Hardware Engineers</text>
+                <url>https://www.bls.gov/ooh/architecture-and-engineering/computer-hardware-engineers.htm#tab-2</url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WEBDEVELOPER</pattern>
+        <template>
+            Web developers design and create websites. They are responsible for 
+            the look of the site. They are also responsible for the site’s 
+            technical aspects, such as its performance and capacity, which are 
+            measures of a website’s speed and how much traffic the site can handle. 
+            In addition, web developers may create content for the site.
+            <link>
+                <text>More Info on Web Developers</text>
+                <url>https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm#tab-2</url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WEBDESIGNER</pattern>
+        <template>
+            Website designers must ensure their sites are engaging. 
+            Once they finish their creations, designers pass their ideas to 
+            web developers who bring the plans to life.
+            <link>
+                <text>More Info on Web Designers</text>
+                <url>https://www.computerscience.org/careers/web-design/</url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SECURITYANALYST</pattern>
+        <template>
+            Information security analysts plan and carry out security measures 
+            to protect an organization’s computer networks and systems. Their 
+            responsibilities are continually expanding as the number of 
+            cyberattacks increases.
+            <link>
+                <text>More Info on Information Security Analysts</text>
+                <url>https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm#tab-2</url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ SOFTWARE DEVELOPER ^</pattern>
+        <template>
+            <srai>SOFTWAREDEVELOPER</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ DATABASE ADMINISTRATOR ^</pattern>
+        <template>
+            <srai>DATABASEADMINISTRATOR</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ COMPUTER ENGINEER ^</pattern>
+        <template>
+            <srai>COMPUTERENGINEER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>^ COMPUTER HARDWARE ENGINEER ^</pattern>
+        <template>
+            <srai>COMPUTERENGINEER</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ WEB DEVELOPER ^</pattern>
+        <template>
+            <srai>WEBDEVELOPER</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ WEB DESIGNER ^</pattern>
+        <template>
+            <srai>WEBDESIGNER</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ SECURITY ANALYST ^</pattern>
+        <template>
+            <srai>SECURITYANALYST</srai>
+        </template>
+    </category>
+    
+</aiml>
